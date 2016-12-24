@@ -18902,6 +18902,73 @@ Straight terminals, without Boss</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="8MHZ_CRYSTAL">
+<packages>
+<package name="8MHZ_CRYSTAL">
+<wire x1="-3.4" y1="-2.4" x2="3.4" y2="-2.4" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-2.4" x2="3.4" y2="2.4" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="2.4" x2="-3.4" y2="2.4" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="2.4" x2="-3.4" y2="-2.4" width="0.2032" layer="51"/>
+<wire x1="-1.368" y1="-2.4" x2="1.368" y2="-2.4" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="0.876" x2="-3.4" y2="-0.876" width="0.2032" layer="21"/>
+<wire x1="1.368" y1="2.4" x2="-1.368" y2="2.4" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-0.876" x2="3.4" y2="0.876" width="0.2032" layer="21"/>
+<circle x="-2.794" y="-0.762" radius="0.254" width="0" layer="21"/>
+<smd name="1" x="-2.55" y="-1.9" dx="1.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="2.55" y="-1.9" dx="1.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="2.55" y="1.9" dx="1.5" dy="1.6" layer="1" rot="R270"/>
+<smd name="4" x="-2.55" y="1.9" dx="1.5" dy="1.6" layer="1" rot="R270"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.286" y="-0.508" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="8MHZ_CRYSTAL">
+<wire x1="2.286" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.889" y1="1.524" x2="0.889" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.889" y1="-1.524" x2="1.651" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="-1.524" x2="1.651" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="1.524" x2="0.889" y2="1.524" width="0.254" layer="94"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="2.286" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.254" y1="1.778" x2="0.254" y2="0" width="0.254" layer="94"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.905" x2="-1.778" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="2.54" x2="4.318" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="4.318" y1="2.54" x2="4.318" y2="1.905" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="4.318" y1="-1.905" x2="4.318" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="-2.54" x2="4.318" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-1.905" width="0.1524" layer="94" style="shortdash"/>
+<text x="-2.54" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="8MHZ_CRYSTAL">
+<gates>
+<gate name="G$1" symbol="8MHZ_CRYSTAL" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="8MHZ_CRYSTAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18993,6 +19060,16 @@ Straight terminals, without Boss</description>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="1N1" library="_mod_diode" deviceset="SM400*" device="" technology="7"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="R16" library="resistor" deviceset="R-EU_" device="R0805W"/>
+<part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$5" library="8MHZ_CRYSTAL" deviceset="8MHZ_CRYSTAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19107,6 +19184,16 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="+3V10" gate="G$1" x="-30.48" y="203.2" rot="R270"/>
 <instance part="1N1" gate="G$1" x="43.18" y="167.64"/>
 <instance part="P+3" gate="1" x="53.34" y="167.64" rot="R270"/>
+<instance part="R11" gate="G$1" x="-139.7" y="60.96"/>
+<instance part="R12" gate="G$1" x="-134.62" y="2.54"/>
+<instance part="R13" gate="G$1" x="-144.78" y="5.08"/>
+<instance part="R14" gate="G$1" x="-149.86" y="0"/>
+<instance part="R15" gate="G$1" x="-137.16" y="12.7"/>
+<instance part="R16" gate="G$1" x="-139.7" y="-43.18"/>
+<instance part="+3V11" gate="G$1" x="-149.86" y="60.96" rot="R90"/>
+<instance part="+3V12" gate="G$1" x="-162.56" y="5.08" rot="R90"/>
+<instance part="+3V13" gate="G$1" x="-149.86" y="-43.18" rot="R90"/>
+<instance part="U$5" gate="G$1" x="-22.86" y="78.74" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19444,6 +19531,31 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-33.02" y1="203.2" x2="-66.04" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="+3V13" gate="G$1" pin="+3V3"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-147.32" y1="-43.18" x2="-144.78" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="-160.02" y1="5.08" x2="-157.48" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="5.08" x2="-149.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="5.08" x2="-157.48" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="-157.48" y1="2.54" x2="-157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="0" x2="-154.94" y2="0" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="-139.7" y1="2.54" x2="-157.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="5.08" x2="-157.48" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="-157.48" y1="12.7" x2="-142.24" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V11" gate="G$1" pin="+3V3"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-147.32" y1="60.96" x2="-144.78" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_OTG_FS_DP" class="0">
 <segment>
@@ -19659,8 +19771,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="LIDAR_I2C2_SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB10"/>
-<wire x1="-104.14" y1="2.54" x2="-127" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="2.54" x2="-129.54" y2="2.54" width="0.1524" layer="91"/>
 <label x="-127" y="2.54" size="1.778" layer="95"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-43.18" y1="167.64" x2="-66.04" y2="167.64" width="0.1524" layer="91"/>
@@ -19671,8 +19784,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="LIDAR_I2C2_SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB11"/>
-<wire x1="-104.14" y1="0" x2="-127" y2="0" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="0" x2="-144.78" y2="0" width="0.1524" layer="91"/>
 <label x="-127" y="0" size="1.778" layer="95"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-43.18" y1="165.1" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
@@ -19683,8 +19797,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="AT24C08C_I2C3_SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA8"/>
-<wire x1="-104.14" y1="60.96" x2="-129.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="60.96" x2="-134.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="-129.54" y="60.96" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="7.62" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
@@ -19695,8 +19810,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="AT24C08C_I2C3_SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PC9"/>
-<wire x1="-104.14" y1="-43.18" x2="-132.08" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-43.18" x2="-134.62" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-132.08" y="-43.18" size="1.778" layer="95"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
@@ -19984,8 +20100,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="MT9V034_I2C1_SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB9"/>
-<wire x1="-104.14" y1="5.08" x2="-129.54" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="5.08" x2="-139.7" y2="5.08" width="0.1524" layer="91"/>
 <label x="-129.54" y="5.08" size="1.778" layer="95"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
@@ -19996,8 +20113,9 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="MT9V034_I2C1_SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB6"/>
-<wire x1="-104.14" y1="12.7" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="12.7" x2="-132.08" y2="12.7" width="0.1524" layer="91"/>
 <label x="-129.54" y="12.7" size="1.778" layer="95"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
@@ -20022,6 +20140,26 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="5V_PWR" gate="-2" pin="S"/>
 <pinref part="1N4007" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="208.28" x2="35.56" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PH0/OSC_IN"/>
+<wire x1="-38.1" y1="81.28" x2="-33.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="81.28" x2="-33.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="86.36" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="3"/>
+<wire x1="-22.86" y1="86.36" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PH1/OSC_OUT"/>
+<wire x1="-38.1" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="78.74" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="73.66" x2="-22.86" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
