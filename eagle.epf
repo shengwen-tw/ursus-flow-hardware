@@ -355,8 +355,8 @@ UsedLibrary="/home/shengwen/eagle/my_lib/switch-tact.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1724 152 2323 551"
-State=2
+Loc="1968 48 2567 447"
+State=1
 Number=0
 
 [Desktop]
