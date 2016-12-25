@@ -19070,12 +19070,15 @@ Straight terminals, without Boss</description>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$5" library="8MHZ_CRYSTAL" deviceset="8MHZ_CRYSTAL" device=""/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="1uf"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="1uf"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <description>Ursus-flow</description>
 <plain>
-<text x="68.58" y="-60.96" size="5.08" layer="98">Ursus-flow optical flow sensor
+<text x="73.66" y="-78.74" size="5.08" layer="98">Ursus-flow optical flow sensor
 NCKU: 071 Lab
 PU: Shengwen Cheng
 email: shengwen1997.tw@gmail.com</text>
@@ -19194,6 +19197,9 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="+3V12" gate="G$1" x="-162.56" y="5.08" rot="R90"/>
 <instance part="+3V13" gate="G$1" x="-149.86" y="-43.18" rot="R90"/>
 <instance part="U$5" gate="G$1" x="-22.86" y="78.74" rot="R90"/>
+<instance part="C3" gate="G$1" x="-17.78" y="86.36" rot="R90"/>
+<instance part="C4" gate="G$1" x="-17.78" y="73.66" rot="R90"/>
+<instance part="GND5" gate="1" x="2.54" y="81.28" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19403,6 +19409,21 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="58.42" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="58.42" y1="99.06" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="86.36" x2="-7.62" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="86.36" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="81.28" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="73.66" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="4"/>
+<wire x1="-17.78" y1="81.28" x2="-7.62" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="78.74" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-7.62" y1="81.28" x2="0" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -20150,6 +20171,8 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-33.02" y1="86.36" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="3"/>
 <wire x1="-22.86" y1="86.36" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -20160,6 +20183,8 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-33.02" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="73.66" x2="-22.86" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
