@@ -352,10 +352,14 @@ UsedLibrary="/home/shengwen/workspace/tools/eaglecad/lbr/zilog.lbr"
 UsedLibrary="7808.lbr"
 UsedLibrary="/home/shengwen/eagle/my_lib/_mod_diode.lbr"
 UsedLibrary="/home/shengwen/eagle/my_lib/switch-tact.lbr"
+UsedLibrary="/home/shengwen/eagle/my_lib/jst-ph.lbr"
+UsedLibrary="LIDAR_MOUNT.lbr"
+UsedLibrary="usb_mirco_b.lbr"
+UsedLibrary="M3_HOLE.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1968 48 2567 447"
+Loc="766 48 1365 447"
 State=1
 Number=0
 
