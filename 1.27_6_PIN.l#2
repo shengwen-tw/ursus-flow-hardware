@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -57,26 +57,40 @@
 </layers>
 <library>
 <packages>
-<package name="LIDAR_MOUNT">
-<wire x1="0" y1="-48.26" x2="20.066" y2="-48.26" width="0.127" layer="21"/>
-<wire x1="20.066" y1="-48.26" x2="20.066" y2="0" width="0.127" layer="21"/>
-<wire x1="20.066" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-48.26" width="0.127" layer="21"/>
-<text x="12.7" y="-34.29" size="5.08" layer="25" rot="R90">LIDAR</text>
-<pad name="P$1" x="-11.43" y="-9.906" drill="3.9878"/>
-<pad name="P$2" x="-11.43" y="-38.354" drill="3.9878"/>
-<pad name="P$3" x="31.496" y="-9.906" drill="3.9878"/>
-<pad name="P$4" x="31.496" y="-38.354" drill="3.9878"/>
+<package name="1.27_6_PIN">
+<pad name="P$1" x="0" y="0" drill="0.6"/>
+<pad name="P$2" x="1.651" y="0" drill="0.6"/>
+<pad name="P$3" x="3.302" y="0" drill="0.6"/>
+<pad name="P$4" x="4.953" y="0" drill="0.6"/>
+<pad name="P$5" x="6.604" y="0" drill="0.6"/>
+<pad name="P$6" x="8.255" y="0" drill="0.6"/>
 </package>
 </packages>
 <symbols>
+<symbol name="1.27_6_PIN">
+<pin name="P$1" x="-10.16" y="10.16" length="middle"/>
+<pin name="P$2" x="-10.16" y="7.62" length="middle"/>
+<pin name="P$3" x="-10.16" y="5.08" length="middle"/>
+<pin name="P$4" x="-10.16" y="2.54" length="middle"/>
+<pin name="P$5" x="-10.16" y="0" length="middle"/>
+<pin name="P$6" x="-10.16" y="-2.54" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LIDAR_MOUNT">
+<deviceset name="1.27_6_PIN">
 <gates>
+<gate name="G$1" symbol="1.27_6_PIN" x="7.62" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="LIDAR_MOUNT">
+<device name="" package="1.27_6_PIN">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

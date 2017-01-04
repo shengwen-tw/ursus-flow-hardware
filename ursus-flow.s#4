@@ -21694,6 +21694,75 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="LIDAR_MOUNT">
+<packages>
+<package name="LIDAR_MOUNT">
+<wire x1="0" y1="-48.26" x2="20.066" y2="-48.26" width="0.127" layer="21"/>
+<wire x1="20.066" y1="-48.26" x2="20.066" y2="0" width="0.127" layer="21"/>
+<wire x1="20.066" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-48.26" width="0.127" layer="21"/>
+<text x="12.7" y="-34.29" size="5.08" layer="25" rot="R90">LIDAR</text>
+<pad name="P$1" x="-3.683" y="-9.906" drill="4.064"/>
+<pad name="P$2" x="-3.683" y="-38.354" drill="4.064"/>
+<pad name="P$3" x="23.749" y="-9.906" drill="4.064"/>
+<pad name="P$4" x="23.749" y="-38.354" drill="4.064"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LIDAR_MOUNT">
+<circle x="7.62" y="0" radius="3.5921" width="0.254" layer="94"/>
+<circle x="-7.62" y="0" radius="3.5921" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="7.62" width="0.6096" layer="94"/>
+<text x="-15.24" y="10.16" size="1.27" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-10.16" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LIDAR_MOUNT">
+<gates>
+<gate name="G$1" symbol="LIDAR_MOUNT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LIDAR_MOUNT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="M3_HOLE">
+<packages>
+<package name="M3_HOLE">
+<pad name="P$1" x="0" y="0" drill="3.3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="M3_HOLE">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="7.62" size="1.27" layer="94">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="M3_HOLE">
+<gates>
+<gate name="G$1" symbol="M3_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M3_HOLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21812,6 +21881,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SCHOTTKY1" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="NSVR0320MW2T1G"/>
 <part name="TEST_PAD1" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TEST_PAD2" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
+<part name="U$6" library="LIDAR_MOUNT" deviceset="LIDAR_MOUNT" device=""/>
+<part name="U$7" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
+<part name="U$8" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
+<part name="U$9" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
+<part name="U$10" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21952,6 +22026,11 @@ email: shengwen1997.tw@gmail.com</text>
 <attribute name="NAME" x="109.22" y="4.445" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="100.33" y="10.16" size="1.778" layer="97" rot="R90"/>
 </instance>
+<instance part="U$6" gate="G$1" x="25.4" y="-30.48"/>
+<instance part="U$7" gate="G$1" x="5.08" y="-58.42"/>
+<instance part="U$8" gate="G$1" x="17.78" y="-58.42"/>
+<instance part="U$9" gate="G$1" x="30.48" y="-58.42"/>
+<instance part="U$10" gate="G$1" x="43.18" y="-58.42"/>
 </instances>
 <busses>
 </busses>
