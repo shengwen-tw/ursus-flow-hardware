@@ -21763,6 +21763,58 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="MPU9250_BREAKOUT">
+<packages>
+<package name="MPU9250_BREAKOUT">
+<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$2" x="1.651" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$3" x="3.302" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$4" x="4.953" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$5" x="6.604" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$6" x="8.255" y="0" drill="0.6" diameter="1.4224"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.762" y2="8.89" width="0.127" layer="1"/>
+<wire x1="-0.762" y1="8.89" x2="9.144" y2="8.89" width="0.127" layer="1"/>
+<wire x1="9.144" y1="8.89" x2="9.144" y2="-1.27" width="0.127" layer="1"/>
+<wire x1="9.144" y1="-1.27" x2="-0.762" y2="-1.27" width="0.127" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU9250_BREAKOUT">
+<pin name="VCC" x="-10.16" y="10.16" length="middle"/>
+<pin name="GND" x="-10.16" y="7.62" length="middle"/>
+<pin name="NCS" x="-10.16" y="5.08" length="middle"/>
+<pin name="SCK" x="-10.16" y="2.54" length="middle"/>
+<pin name="SDI" x="-10.16" y="0" length="middle"/>
+<pin name="SDO" x="-10.16" y="-2.54" length="middle"/>
+<wire x1="-5.08" y1="12.7" x2="7.62" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="12.7" width="0.6096" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU9250_BREAKOUT">
+<gates>
+<gate name="G$1" symbol="MPU9250_BREAKOUT" x="7.62" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="MPU9250_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="NCS" pad="P$3"/>
+<connect gate="G$1" pin="SCK" pad="P$4"/>
+<connect gate="G$1" pin="SDI" pad="P$5"/>
+<connect gate="G$1" pin="SDO" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21886,6 +21938,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$8" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$9" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$10" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
+<part name="U$11" library="MPU9250_BREAKOUT" deviceset="MPU9250_BREAKOUT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22031,6 +22084,7 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="U$8" gate="G$1" x="17.78" y="-58.42"/>
 <instance part="U$9" gate="G$1" x="30.48" y="-58.42"/>
 <instance part="U$10" gate="G$1" x="43.18" y="-58.42"/>
+<instance part="U$11" gate="G$1" x="-132.08" y="116.84" rot="R180"/>
 </instances>
 <busses>
 </busses>

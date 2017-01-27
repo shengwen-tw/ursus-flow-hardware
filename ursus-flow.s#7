@@ -21763,6 +21763,236 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="_hhn_con_pinhead_box_1mm27">
+<description>&lt;h2&gt;Pin Header, Box-Type, 1.27mm/0.5"/50mil Pitch, THT and SMT&lt;/h2&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;u&gt;No. of circuits:&lt;/u&gt;
+2x 03|05|06|07|08|10|12|13|14|15|
+   17|20|22|25|30|32|34|40|50
+&lt;u&gt;Packages:&lt;/u&gt;
+_S: Straight
+ N: No Locking
+ T: THT-Mounting | S: SMT-Mounting
+&lt;u&gt;Schematic option&lt;/u&gt;
+_S: Singularized pins (1 pin/gate)&lt;/pre&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;u&gt;Important Note:&lt;/u&gt; &amp;nbsp;THT- (Thru-Hole-) Versions _&amp;hellip;T:&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;
+
+&lt;font color="grey"&gt;Pad-drill is set to 0.65mm (minimum value acc. to manufacturer's data sheet).&lt;br /&gt;
+Pad diameter in this lbr is set to a specific value (NOT 'auto' = 0); this is ignored by eagle if drc-settings result in a larger diameter
+(pad diameter is overwritten to ensure drc restring min value).&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;DRC &gt; Restring: set 'min value' to 8mil (on top, bottom, inner) to avoid 'clearance' errors.&lt;br /&gt;
+This will require an 8-mil process (pcb manufacturer)!&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;
+Other pads are affected too, so you may increase %-value in DRC restring tab, e.g. to (10/8)*25% = ca. 30%
+to minimize the effect on pads with a drill greater than 0.65mm
+(CadSoft's default.dru sets min restring to 10mil and percentage to 25%).&lt;/font&gt;&lt;p/&gt;
+ 
+&lt;hr /&gt;
+
+&lt;p&gt;Author: Dipl.-Ing. FH Rainer Bayer&lt;br /&gt;
+Heilbronn University: &amp;nbsp;&lt;a href="http://www.hs-heilbronn.de/rainer.bayer" target="_blank"&gt;http://www.hochschule-heilbronn.de/rainer.bayer&lt;/a&gt;, &amp;nbsp;&lt;a href="mailto:rainer.bayer@hs-heilbronn.de" target="_blank"&gt;rainer.bayer@hs-heilbronn.de&lt;/a&gt;&lt;br /&gt;
+Engineering office ing-rb: &amp;nbsp;&lt;a href="http://www.ing-rb.de/" target="_blank"&gt;http://www.ing-rb.de/&lt;/a&gt;, &amp;nbsp;&lt;a href="mailto:eagle@ing-rb.de" target="_blank"&gt;eagle@ing-rb.de&lt;/a&gt;&lt;br /&gt;
+Lectureship dozent-rb: &amp;nbsp;&lt;a href="http://www.dozent-rb.de/" target="_blank"&gt;http://www.dozent-rb.de/&lt;/a&gt;, &amp;nbsp;&lt;a href="mailto:eagle@dozent-rb.de" target="_blank"&gt;eagle@dozent-rb.de&lt;/a&gt;&lt;/pre&gt;&lt;/author&gt;&lt;/p&gt;</description>
+<packages>
+<package name="PHB_1MM27_2X06_SNT">
+<description>&lt;p&gt;&lt;b&gt;Pin Header Box-Type, 1.27mm Pitch,  2x06 circuits, Straight, No Locking, THT&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Important Note:&lt;br /&gt;
+&lt;/u&gt;Diameter in this lbr is set to a specific value (NOT 'auto' = 0),&lt;br /&gt;
+this is ignored by actual eagle versions if drc-settings result in a bigger diameter.&lt;br /&gt;
+&lt;b&gt;Workaround: DRC &gt; Restring: set "min value" to 8mil (on top, bottom, inner)&lt;br /&gt;
+This requires an 8-mil process (pcb manufacturer)!&lt;/b&gt;&lt;br&gt;
+You may increase %-value, e.g. to 25%&lt;p/&gt;</description>
+<wire x1="1.2" y1="-2.625" x2="7.21" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="7.21" y1="-2.625" x2="7.21" y2="2.625" width="0.1016" layer="21"/>
+<wire x1="7.21" y1="2.625" x2="-7.21" y2="2.625" width="0.1016" layer="21"/>
+<wire x1="-7.21" y1="2.625" x2="-7.21" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="-6.185" y1="-1.75" x2="-1.2" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="1.2" y1="-1.75" x2="6.185" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="6.185" y1="-1.75" x2="6.185" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="6.185" y1="1.75" x2="-6.185" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="-6.185" y1="1.75" x2="-6.185" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="-7.21" y1="-2.625" x2="-1.2" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="-1.2" y1="-2.625" x2="1.2" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="1.2" y1="-2.625" x2="1.2" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="-1.2" y1="-1.75" x2="-1.2" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="-7.3819" y1="2.7781" x2="7.3819" y2="2.7781" width="0.1016" layer="39"/>
+<wire x1="7.3819" y1="2.7781" x2="7.3819" y2="-2.7781" width="0.1016" layer="39"/>
+<wire x1="7.3819" y1="-2.7781" x2="-7.3819" y2="-2.7781" width="0.1016" layer="39"/>
+<wire x1="-7.3819" y1="-2.7781" x2="-7.3819" y2="2.7781" width="0.1016" layer="39"/>
+<pad name="6" x="-0.635" y="0.635" drill="0.65" diameter="1"/>
+<pad name="5" x="-0.635" y="-0.635" drill="0.65" diameter="1"/>
+<pad name="8" x="0.635" y="0.635" drill="0.65" diameter="1"/>
+<pad name="7" x="0.635" y="-0.635" drill="0.65" diameter="1"/>
+<pad name="10" x="1.905" y="0.635" drill="0.65" diameter="1"/>
+<pad name="9" x="1.905" y="-0.635" drill="0.65" diameter="1"/>
+<pad name="4" x="-1.905" y="0.635" drill="0.65" diameter="1"/>
+<pad name="3" x="-1.905" y="-0.635" drill="0.65" diameter="1"/>
+<pad name="2" x="-3.175" y="0.635" drill="0.65" diameter="1"/>
+<pad name="1" x="-3.175" y="-0.635" drill="0.65" diameter="1"/>
+<pad name="12" x="3.175" y="0.635" drill="0.65" diameter="1"/>
+<pad name="11" x="3.175" y="-0.635" drill="0.65" diameter="1"/>
+<text x="-4.6831" y="-1.0319" size="0.8128" layer="21" ratio="9">1</text>
+<text x="-4.7625" y="0.2381" size="0.8128" layer="21" ratio="9">2</text>
+<text x="-7.2231" y="2.9369" size="1.27" layer="25" ratio="9">&gt;NAME</text>
+<text x="7.6994" y="4.2068" size="1.27" layer="27" ratio="9" rot="R180">&gt;VALUE</text>
+<rectangle x1="-3.375" y1="0.435" x2="-2.975" y2="0.835" layer="51"/>
+<rectangle x1="-2.105" y1="0.435" x2="-1.705" y2="0.835" layer="51"/>
+<rectangle x1="-0.835" y1="0.435" x2="-0.435" y2="0.835" layer="51"/>
+<rectangle x1="0.435" y1="0.435" x2="0.835" y2="0.835" layer="51"/>
+<rectangle x1="1.705" y1="0.435" x2="2.105" y2="0.835" layer="51"/>
+<rectangle x1="2.975" y1="0.435" x2="3.375" y2="0.835" layer="51"/>
+<rectangle x1="-3.375" y1="-0.835" x2="-2.975" y2="-0.435" layer="51"/>
+<rectangle x1="-2.105" y1="-0.835" x2="-1.705" y2="-0.435" layer="51"/>
+<rectangle x1="-0.835" y1="-0.835" x2="-0.435" y2="-0.435" layer="51"/>
+<rectangle x1="0.435" y1="-0.835" x2="0.835" y2="-0.435" layer="51"/>
+<rectangle x1="1.705" y1="-0.835" x2="2.105" y2="-0.435" layer="51"/>
+<rectangle x1="2.975" y1="-0.835" x2="3.375" y2="-0.435" layer="51"/>
+<polygon width="0.1016" layer="21">
+<vertex x="-3.175" y="-2.6194"/>
+<vertex x="-3.4925" y="-3.2544"/>
+<vertex x="-2.8575" y="-3.2544"/>
+</polygon>
+</package>
+<package name="PHB_1MM27_2X06_SNS">
+<description>&lt;p&gt;&lt;b&gt;Pin Header Box-Type, 1.27mm Pitch,  2x06 circuits, Straight, No Locking, SMT&lt;/b&gt;&lt;/p&gt;</description>
+<wire x1="7.21" y1="-2.625" x2="7.21" y2="2.625" width="0.1016" layer="21"/>
+<wire x1="-7.21" y1="2.625" x2="-7.21" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="6.185" y1="-1.75" x2="6.185" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="-6.185" y1="1.75" x2="-6.185" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="-1.2" y1="-2.625" x2="1.2" y2="-2.625" width="0.1016" layer="51"/>
+<wire x1="1.2" y1="-2.625" x2="1.2" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="-1.2" y1="-1.75" x2="-1.2" y2="-2.625" width="0.1016" layer="51"/>
+<wire x1="-4.7625" y1="-2.8575" x2="-7.4613" y2="-2.8575" width="0.1016" layer="39"/>
+<wire x1="-7.4613" y1="-2.8575" x2="-7.4613" y2="2.8575" width="0.1016" layer="39"/>
+<wire x1="-7.4613" y1="2.8575" x2="-4.1275" y2="2.8575" width="0.1016" layer="39"/>
+<wire x1="-4.1275" y1="2.8575" x2="-4.1275" y2="3.81" width="0.1016" layer="39"/>
+<wire x1="-4.1275" y1="3.81" x2="4.1275" y2="3.81" width="0.1016" layer="39"/>
+<wire x1="4.1275" y1="3.81" x2="4.1275" y2="2.8575" width="0.1016" layer="39"/>
+<wire x1="4.1275" y1="2.8575" x2="7.4613" y2="2.8575" width="0.1016" layer="39"/>
+<wire x1="7.4613" y1="2.8575" x2="7.4613" y2="-2.8575" width="0.1016" layer="39"/>
+<wire x1="7.4613" y1="-2.8575" x2="4.1276" y2="-2.8575" width="0.1016" layer="39"/>
+<wire x1="4.1276" y1="-2.8575" x2="4.1276" y2="-3.81" width="0.1016" layer="39"/>
+<wire x1="4.1276" y1="-3.81" x2="-4.7625" y2="-3.81" width="0.1016" layer="39"/>
+<wire x1="-4.7625" y1="-3.81" x2="-4.7625" y2="-2.8575" width="0.1016" layer="39"/>
+<wire x1="-4.02" y1="2.625" x2="-7.21" y2="2.625" width="0.1016" layer="21"/>
+<wire x1="4.035" y1="2.625" x2="-4.035" y2="2.625" width="0.1016" layer="51"/>
+<wire x1="7.21" y1="2.625" x2="4.02" y2="2.625" width="0.1016" layer="21"/>
+<wire x1="-4.045" y1="-1.75" x2="-1.2" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="1.2" y1="-1.75" x2="4.045" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="-6.185" y1="-1.75" x2="-4.025" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="4.025" y1="-1.75" x2="6.185" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="4.045" y1="1.75" x2="-4.045" y2="1.75" width="0.1016" layer="51"/>
+<wire x1="-4.045" y1="1.75" x2="-6.185" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="6.185" y1="1.75" x2="4.025" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="-4.06" y1="-2.625" x2="-1.2" y2="-2.625" width="0.1016" layer="51"/>
+<wire x1="1.2" y1="-2.625" x2="4.06" y2="-2.625" width="0.1016" layer="51"/>
+<wire x1="-7.21" y1="-2.625" x2="-4.045" y2="-2.625" width="0.1016" layer="21"/>
+<wire x1="4.025" y1="-2.625" x2="7.21" y2="-2.625" width="0.1016" layer="21"/>
+<smd name="6" x="-0.635" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="5" x="-0.635" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="8" x="0.635" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="7" x="0.635" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="9" x="1.905" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="10" x="1.905" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="2" x="-3.175" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="1" x="-3.175" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="3" x="-1.905" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="4" x="-1.905" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="11" x="3.175" y="-1.85" dx="0.76" dy="2.8" layer="1"/>
+<smd name="12" x="3.175" y="1.85" dx="0.76" dy="2.8" layer="1"/>
+<text x="-4.6831" y="-1.0319" size="0.8128" layer="21" ratio="9">1</text>
+<text x="-4.7625" y="0.2381" size="0.8128" layer="21" ratio="9">2</text>
+<text x="-7.2231" y="3.4949" size="1.27" layer="25" ratio="9">&gt;NAME</text>
+<text x="7.6994" y="4.7648" size="1.27" layer="27" ratio="9" rot="R180">&gt;VALUE</text>
+<rectangle x1="-3.375" y1="0.435" x2="-2.975" y2="0.835" layer="51"/>
+<rectangle x1="-3.375" y1="-0.835" x2="-2.975" y2="-0.435" layer="51"/>
+<rectangle x1="-2.105" y1="0.435" x2="-1.705" y2="0.835" layer="51"/>
+<rectangle x1="-2.105" y1="-0.835" x2="-1.705" y2="-0.435" layer="51"/>
+<rectangle x1="-0.835" y1="0.435" x2="-0.435" y2="0.835" layer="51"/>
+<rectangle x1="-0.835" y1="-0.835" x2="-0.435" y2="-0.435" layer="51"/>
+<rectangle x1="0.435" y1="0.435" x2="0.835" y2="0.835" layer="51"/>
+<rectangle x1="0.435" y1="-0.835" x2="0.835" y2="-0.435" layer="51"/>
+<rectangle x1="1.705" y1="0.435" x2="2.105" y2="0.835" layer="51"/>
+<rectangle x1="1.705" y1="-0.835" x2="2.105" y2="-0.435" layer="51"/>
+<rectangle x1="2.975" y1="0.435" x2="3.375" y2="0.835" layer="51"/>
+<rectangle x1="2.975" y1="-0.835" x2="3.375" y2="-0.435" layer="51"/>
+<polygon width="0.1016" layer="21">
+<vertex x="-3.8132" y="-2.9464"/>
+<vertex x="-4.4482" y="-2.6289"/>
+<vertex x="-4.4482" y="-3.2639"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.032" y="-0.762" size="1.6764" layer="95" ratio="12">&gt;NAME</text>
+<text x="-0.254" y="-2.921" size="1.6764" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PHB_1MM27_2X06_?_S" prefix="X">
+<description>&lt;p&gt;&lt;b&gt;Pin Header Box-Type, 1.27mm/0.5"/50mil Pitch, 2x06 Circuits,&lt;br /&gt;single gates in schematic&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Note:&lt;/u&gt; see library description for an important note about THT-version&lt;/p&gt;</description>
+<gates>
+<gate name="-1" symbol="M" x="7.62" y="48.26"/>
+<gate name="-2" symbol="M" x="7.62" y="43.18"/>
+<gate name="-3" symbol="M" x="7.62" y="38.1"/>
+<gate name="-4" symbol="M" x="7.62" y="33.02"/>
+<gate name="-5" symbol="M" x="7.62" y="27.94"/>
+<gate name="-6" symbol="M" x="7.62" y="22.86"/>
+<gate name="-7" symbol="M" x="7.62" y="17.78"/>
+<gate name="-8" symbol="M" x="7.62" y="12.7"/>
+<gate name="-9" symbol="M" x="7.62" y="7.62"/>
+<gate name="-10" symbol="M" x="7.62" y="2.54"/>
+<gate name="-11" symbol="M" x="25.4" y="48.26"/>
+<gate name="-12" symbol="M" x="25.4" y="43.18"/>
+</gates>
+<devices>
+<device name="SNT" package="PHB_1MM27_2X06_SNT">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SNS" package="PHB_1MM27_2X06_SNS">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21886,7 +22116,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$8" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$9" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$10" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
-<part name="SV2" library="con-lstb" deviceset="MA06-1" device=""/>
+<part name="X1" library="_hhn_con_pinhead_box_1mm27" deviceset="PHB_1MM27_2X06_?_S" device="SNT"/>
 </parts>
 <sheets>
 <sheet>
@@ -22032,7 +22262,7 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="U$8" gate="G$1" x="17.78" y="-58.42"/>
 <instance part="U$9" gate="G$1" x="30.48" y="-58.42"/>
 <instance part="U$10" gate="G$1" x="43.18" y="-58.42"/>
-<instance part="SV2" gate="1" x="-149.86" y="111.76"/>
+<instance part="X1" gate="-1" x="-121.92" y="99.06"/>
 </instances>
 <busses>
 </busses>

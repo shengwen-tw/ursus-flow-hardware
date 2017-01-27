@@ -64,8 +64,8 @@
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -114,6 +114,8 @@
 <wire x1="3.81" y1="80.01" x2="91.44" y2="80.01" width="0" layer="20"/>
 <wire x1="93.98" y1="77.47" x2="93.98" y2="31.75" width="0" layer="20"/>
 <wire x1="3.81" y1="29.21" x2="91.44" y2="29.21" width="0" layer="20"/>
+<text x="64.77" y="58.42" size="5.08" layer="106" rot="MR0">Ursus-flow</text>
+<text x="59.69" y="54.61" size="1.778" layer="106" rot="MR0">Computer vision board</text>
 </plain>
 <libraries>
 <library name="burr-brown">

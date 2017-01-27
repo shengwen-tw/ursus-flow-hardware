@@ -21702,10 +21702,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="20.066" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="-48.26" width="0.127" layer="21"/>
 <text x="12.7" y="-34.29" size="5.08" layer="25" rot="R90">LIDAR</text>
-<pad name="P$1" x="-3.683" y="-9.906" drill="3.9878"/>
-<pad name="P$2" x="-3.683" y="-38.354" drill="3.9878"/>
-<pad name="P$3" x="23.749" y="-9.906" drill="3.9878"/>
-<pad name="P$4" x="23.749" y="-38.354" drill="3.9878"/>
+<pad name="P$1" x="-3.683" y="-9.906" drill="4.064"/>
+<pad name="P$2" x="-3.683" y="-38.354" drill="4.064"/>
+<pad name="P$3" x="23.749" y="-9.906" drill="4.064"/>
+<pad name="P$4" x="23.749" y="-38.354" drill="4.064"/>
 </package>
 </packages>
 <symbols>

@@ -3271,6 +3271,22 @@ Micro-USB AB Receptacle, Bottom Mount, SMT, Lead-Free&lt;/a&gt; (&lt;a href="htt
 </package>
 </packages>
 </library>
+<library name="MPU9250_BREAKOUT">
+<packages>
+<package name="MPU9250_BREAKOUT">
+<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$2" x="1.651" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$3" x="3.302" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$4" x="4.953" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$5" x="6.604" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$6" x="8.255" y="0" drill="0.6" diameter="1.4224"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.762" y2="8.89" width="0.127" layer="1"/>
+<wire x1="-0.762" y1="8.89" x2="9.144" y2="8.89" width="0.127" layer="1"/>
+<wire x1="9.144" y1="8.89" x2="9.144" y2="-1.27" width="0.127" layer="1"/>
+<wire x1="9.144" y1="-1.27" x2="-0.762" y2="-1.27" width="0.127" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3555,6 +3571,7 @@ design rules under a new name.</description>
 <element name="U$8" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="90.17" y="33.02"/>
 <element name="U$9" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="5.08" y="76.2"/>
 <element name="U$10" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="90.17" y="76.2"/>
+<element name="U$11" library="MPU9250_BREAKOUT" package="MPU9250_BREAKOUT" value="MPU9250_BREAKOUT" x="27.94" y="48.26" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">

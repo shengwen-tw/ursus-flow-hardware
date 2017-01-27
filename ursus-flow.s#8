@@ -21886,6 +21886,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$8" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$9" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$10" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
+<part name="SV2" library="con-lstb" deviceset="MA06-1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22031,6 +22032,7 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="U$8" gate="G$1" x="17.78" y="-58.42"/>
 <instance part="U$9" gate="G$1" x="30.48" y="-58.42"/>
 <instance part="U$10" gate="G$1" x="43.18" y="-58.42"/>
+<instance part="SV2" gate="1" x="-149.86" y="111.76"/>
 </instances>
 <busses>
 </busses>
