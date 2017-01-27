@@ -21829,7 +21829,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LED1" library="led" deviceset="LED" device="SML0805"/>
 <part name="LED2" library="led" deviceset="LED" device="SML0805"/>
 <part name="LED3" library="led" deviceset="LED" device="SML0805"/>
-<part name="POWER_INDICATOR" library="led" deviceset="LED" device="SML0805"/>
+<part name="PWR_LED" library="led" deviceset="LED" device="SML0805" value="PWR_LED"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
@@ -21852,7 +21852,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="SV1" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="[ST-LINK]" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="usb_mirco_b" deviceset="MICRO-USB-RECEPTACLE" device="47589-0001"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -21892,7 +21892,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="MT9V034_MODULE" deviceset="MT9V034_MODULE" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="switch-panasonic" deviceset="EVQPS" device="L/Q"/>
+<part name="S1" library="switch-panasonic" deviceset="EVQPS" device="L/Q" value=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
@@ -21917,12 +21917,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C19" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="100uf/10V"/>
 <part name="C20" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="100uf/10V"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="P1" library="jst-ph" deviceset="JST-PH4" device=""/>
-<part name="P2" library="jst-ph" deviceset="JST-PH6" device=""/>
-<part name="P3" library="jst-ph" deviceset="JST-PH4" device=""/>
-<part name="P4" library="jst-ph" deviceset="JST-PH4" device=""/>
-<part name="SCHOTTKY2" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="NSVR0320MW2T1G"/>
-<part name="SCHOTTKY1" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="NSVR0320MW2T1G"/>
+<part name="[LIDAR]" library="jst-ph" deviceset="JST-PH4" device=""/>
+<part name="[SPI2]" library="jst-ph" deviceset="JST-PH6" device=""/>
+<part name="[UART2]" library="jst-ph" deviceset="JST-PH4" device=""/>
+<part name="[UART3]" library="jst-ph" deviceset="JST-PH4" device=""/>
+<part name="SCHOTTKY2" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="shottky2"/>
+<part name="SCHOTTKY1" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="shottky1"/>
 <part name="TEST_PAD1" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="TEST_PAD2" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
 <part name="U$6" library="LIDAR_MOUNT" deviceset="LIDAR_MOUNT" device=""/>
@@ -21954,7 +21954,7 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="LED1" gate="G$1" x="129.54" y="99.06" rot="R90"/>
 <instance part="LED2" gate="G$1" x="129.54" y="109.22" rot="R90"/>
 <instance part="LED3" gate="G$1" x="129.54" y="119.38" rot="R90"/>
-<instance part="POWER_INDICATOR" gate="G$1" x="81.28" y="208.28" rot="R90"/>
+<instance part="PWR_LED" gate="G$1" x="81.28" y="208.28" rot="R90"/>
 <instance part="R1" gate="G$1" x="142.24" y="99.06" rot="R180"/>
 <instance part="R2" gate="G$1" x="142.24" y="109.22" rot="R180"/>
 <instance part="R3" gate="G$1" x="142.24" y="119.38" rot="R180"/>
@@ -21978,7 +21978,7 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="GND10" gate="1" x="25.4" y="0"/>
 <instance part="+3V3" gate="G$1" x="25.4" y="15.24"/>
 <instance part="+3V4" gate="G$1" x="-91.44" y="101.6" rot="R90"/>
-<instance part="SV1" gate="1" x="60.96" y="114.3"/>
+<instance part="[ST-LINK]" gate="1" x="60.96" y="114.3"/>
 <instance part="GND11" gate="1" x="71.12" y="101.6"/>
 <instance part="U$3" gate="G$1" x="17.78" y="167.64" rot="R180"/>
 <instance part="GND12" gate="1" x="30.48" y="180.34" rot="R180"/>
@@ -22043,10 +22043,10 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="C19" gate="G$1" x="48.26" y="203.2"/>
 <instance part="C20" gate="G$1" x="114.3" y="170.18"/>
 <instance part="GND30" gate="1" x="48.26" y="193.04"/>
-<instance part="P1" gate="A" x="-73.66" y="165.1" rot="MR180"/>
-<instance part="P2" gate="A" x="-124.46" y="162.56" rot="MR180"/>
-<instance part="P3" gate="A" x="-73.66" y="203.2" rot="MR180"/>
-<instance part="P4" gate="A" x="-124.46" y="203.2" rot="MR180"/>
+<instance part="[LIDAR]" gate="A" x="-73.66" y="165.1" rot="MR180"/>
+<instance part="[SPI2]" gate="A" x="-124.46" y="162.56" rot="MR180"/>
+<instance part="[UART2]" gate="A" x="-73.66" y="203.2" rot="MR180"/>
+<instance part="[UART3]" gate="A" x="-124.46" y="203.2" rot="MR180"/>
 <instance part="SCHOTTKY2" gate="G$1" x="40.64" y="160.02" smashed="yes">
 <attribute name="NAME" x="33.02" y="152.8826" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="155.1686" size="1.778" layer="96"/>
@@ -22096,7 +22096,7 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="POWER_INDICATOR" gate="G$1" pin="C"/>
+<pinref part="PWR_LED" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="208.28" x2="93.98" y2="208.28" width="0.1524" layer="91"/>
 </segment>
@@ -22174,7 +22174,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="25.4" y1="2.54" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="[ST-LINK]" gate="1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="68.58" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="109.22" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
@@ -22203,25 +22203,25 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="-116.84" y1="200.66" x2="-111.76" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="-111.76" y1="200.66" x2="-111.76" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="P4" gate="A" pin="1"/>
+<pinref part="[UART3]" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="200.66" x2="-60.96" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="200.66" x2="-60.96" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="P3" gate="A" pin="1"/>
+<pinref part="[UART2]" gate="A" pin="1"/>
 </segment>
 <segment>
 <wire x1="-116.84" y1="170.18" x2="-104.14" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="-104.14" y1="170.18" x2="-104.14" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="P2" gate="A" pin="6"/>
+<pinref part="[SPI2]" gate="A" pin="6"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="162.56" x2="-63.5" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="162.56" x2="-63.5" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="P1" gate="A" pin="1"/>
+<pinref part="[LIDAR]" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -22318,7 +22318,7 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="-35.56" y1="170.18" x2="-27.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="167.64" x2="-35.56" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="P1" gate="A" pin="4"/>
+<pinref part="[LIDAR]" gate="A" pin="4"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
@@ -22353,7 +22353,7 @@ email: shengwen1997.tw@gmail.com</text>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<pinref part="POWER_INDICATOR" gate="G$1" pin="A"/>
+<pinref part="PWR_LED" gate="G$1" pin="A"/>
 <wire x1="68.58" y1="208.28" x2="78.74" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -22406,12 +22406,12 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="-116.84" y1="203.2" x2="-83.82" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="P4" gate="A" pin="2"/>
+<pinref part="[UART3]" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="-116.84" y1="167.64" x2="-99.06" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="P2" gate="A" pin="5"/>
+<pinref part="[SPI2]" gate="A" pin="5"/>
 </segment>
 <segment>
 <pinref part="SV3" gate="1" pin="6"/>
@@ -22428,7 +22428,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-33.02" y1="203.2" x2="-66.04" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<pinref part="P3" gate="A" pin="2"/>
+<pinref part="[UART2]" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
@@ -22677,7 +22677,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-43.18" y1="167.64" x2="-66.04" y2="167.64" width="0.1524" layer="91"/>
 <label x="-63.5" y="167.64" size="1.778" layer="95"/>
-<pinref part="P1" gate="A" pin="3"/>
+<pinref part="[LIDAR]" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="LIDAR_I2C2_SDA" class="0">
@@ -22690,7 +22690,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-43.18" y1="165.1" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
 <label x="-63.5" y="165.1" size="1.778" layer="95"/>
-<pinref part="P1" gate="A" pin="2"/>
+<pinref part="[LIDAR]" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="AT24C08C_I2C3_SCL" class="0">
@@ -22723,7 +22723,7 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="STLINLK_SWDIO" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="3"/>
+<pinref part="[ST-LINK]" gate="1" pin="3"/>
 <wire x1="68.58" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="71.12" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -22735,7 +22735,7 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="STLINLK_SWCLK" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="[ST-LINK]" gate="1" pin="2"/>
 <wire x1="68.58" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
 <label x="71.12" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -22813,7 +22813,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-101.6" y1="160.02" x2="-116.84" y2="160.02" width="0.1524" layer="91"/>
 <label x="-114.3" y="160.02" size="1.778" layer="95"/>
-<pinref part="P2" gate="A" pin="2"/>
+<pinref part="[SPI2]" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
@@ -22825,7 +22825,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-101.6" y1="165.1" x2="-116.84" y2="165.1" width="0.1524" layer="91"/>
 <label x="-114.3" y="165.1" size="1.778" layer="95"/>
-<pinref part="P2" gate="A" pin="4"/>
+<pinref part="[SPI2]" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
@@ -22837,7 +22837,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-101.6" y1="162.56" x2="-116.84" y2="162.56" width="0.1524" layer="91"/>
 <label x="-114.3" y="162.56" size="1.778" layer="95"/>
-<pinref part="P2" gate="A" pin="3"/>
+<pinref part="[SPI2]" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SPI2_CS" class="0">
@@ -22849,7 +22849,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-104.14" y1="157.48" x2="-116.84" y2="157.48" width="0.1524" layer="91"/>
 <label x="-114.3" y="157.48" size="1.778" layer="95"/>
-<pinref part="P2" gate="A" pin="1"/>
+<pinref part="[SPI2]" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="LED_B" class="0">
@@ -22940,28 +22940,28 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="208.28" x2="-114.3" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="P4" gate="A" pin="4"/>
+<pinref part="[UART3]" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="205.74" x2="-114.3" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="P4" gate="A" pin="3"/>
+<pinref part="[UART3]" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="208.28" x2="-63.5" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="P3" gate="A" pin="4"/>
+<pinref part="[UART2]" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="205.74" x2="-66.04" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="P3" gate="A" pin="3"/>
+<pinref part="[UART2]" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="NRST" class="0">
