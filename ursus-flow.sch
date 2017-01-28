@@ -21723,9 +21723,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </classes>
 <parts>
 <part name="U$1" library="STM32F767VIT6" deviceset="STM32F767VIT6" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="SML0805"/>
-<part name="LED2" library="led" deviceset="LED" device="SML0805"/>
-<part name="LED3" library="led" deviceset="LED" device="SML0805"/>
+<part name="LED1" library="led" deviceset="LED" device="SML0805" value="R"/>
+<part name="LED2" library="led" deviceset="LED" device="SML0805" value="G"/>
+<part name="LED3" library="led" deviceset="LED" device="SML0805" value="B"/>
 <part name="PWR_LED" library="led" deviceset="LED" device="SML0805" value="PWR_LED"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
@@ -21749,7 +21749,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="[ST-LINK]" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="[ST-LINK]" library="con-lstb" deviceset="MA04-1" device="" value="stlink_connector"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="usb_mirco_b" deviceset="MICRO-USB-RECEPTACLE" device="47589-0001"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -21811,10 +21811,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C19" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="100uf/10V"/>
 <part name="C20" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="100uf/10V"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="[LIDAR]" library="jst-ph" deviceset="JST-PH4" device=""/>
-<part name="[SPI2]" library="jst-ph" deviceset="JST-PH6" device=""/>
-<part name="[UART2]" library="jst-ph" deviceset="JST-PH4" device=""/>
-<part name="[UART3]" library="jst-ph" deviceset="JST-PH4" device=""/>
+<part name="[LIDAR]" library="jst-ph" deviceset="JST-PH4" device="" value="lidar_connector"/>
+<part name="[SPI2]" library="jst-ph" deviceset="JST-PH6" device="" value="spi2_connector"/>
+<part name="[UART2]" library="jst-ph" deviceset="JST-PH4" device="" value="uart2_connector"/>
+<part name="[UART3]" library="jst-ph" deviceset="JST-PH4" device="" value="uart3_connector"/>
 <part name="SCHOTTKY2" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="shottky2"/>
 <part name="SCHOTTKY1" library="_mod_diode" deviceset="DIODE-" device="SOD323-W" value="shottky1"/>
 <part name="I2C3_SDA" library="testpad" deviceset="TPSQ" device="TP20SQ"/>
@@ -21837,7 +21837,7 @@ NCKU: 071 Lab
 PU: Shengwen Cheng
 email: shengwen1997.tw@gmail.com</text>
 <text x="71.12" y="116.84" size="1.778" layer="98">Vcc is not connected for ST-Link</text>
-<text x="-121.92" y="175.26" size="1.778" layer="98">SPI2</text>
+<text x="-127" y="175.26" size="1.778" layer="98">SPI2</text>
 <text x="-127" y="213.36" size="1.778" layer="98">UART3</text>
 <text x="-76.2" y="213.36" size="1.778" layer="98">UART2</text>
 <text x="-76.2" y="175.26" size="1.778" layer="98">Lidar</text>
@@ -21847,9 +21847,18 @@ email: shengwen1997.tw@gmail.com</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-73.66" y="2.54"/>
-<instance part="LED1" gate="G$1" x="129.54" y="99.06" rot="R90"/>
-<instance part="LED2" gate="G$1" x="129.54" y="109.22" rot="R90"/>
-<instance part="LED3" gate="G$1" x="129.54" y="119.38" rot="R90"/>
+<instance part="LED1" gate="G$1" x="129.54" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.112" y="102.616" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="134.112" y="104.775" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LED2" gate="G$1" x="129.54" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.112" y="112.776" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="134.112" y="114.935" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LED3" gate="G$1" x="129.54" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="134.112" y="122.936" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="134.112" y="125.095" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="PWR_LED" gate="G$1" x="81.28" y="208.28" rot="R90"/>
 <instance part="R1" gate="G$1" x="142.24" y="99.06" rot="R180"/>
 <instance part="R2" gate="G$1" x="142.24" y="109.22" rot="R180"/>
@@ -22031,6 +22040,8 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="C20" gate="G$1" pin="-"/>
 <wire x1="114.3" y1="165.1" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="160.02" x2="104.14" y2="160.02" width="0.1524" layer="91"/>
+<junction x="86.36" y="160.02"/>
+<junction x="104.14" y="160.02"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VSS@1"/>
@@ -22052,6 +22063,10 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-78.74" y1="-66.04" x2="-78.74" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-71.12" y1="-73.66" x2="-71.12" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="-73.66" y="-71.12"/>
+<junction x="-76.2" y="-71.12"/>
+<junction x="-78.74" y="-71.12"/>
+<junction x="-71.12" y="-71.12"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -22067,6 +22082,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="25.4" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="25.4" y1="2.54" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
+<junction x="25.4" y="5.08"/>
 </segment>
 <segment>
 <pinref part="[ST-LINK]" gate="1" pin="1"/>
@@ -22093,6 +22109,10 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="17.78" y1="180.34" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="182.88" x2="25.4" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="182.88" x2="25.4" y2="172.72" width="0.1524" layer="91"/>
+<junction x="15.24" y="182.88"/>
+<junction x="20.32" y="182.88"/>
+<junction x="25.4" y="172.72"/>
+<junction x="17.78" y="182.88"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -22132,6 +22152,7 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="-5.08" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="48.26" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-5.08" y="48.26"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
@@ -22165,6 +22186,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="38.1" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="38.1" y1="104.14" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<junction x="38.1" y="109.22"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -22180,6 +22202,8 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-17.78" y1="78.74" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-7.62" y1="81.28" x2="0" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-7.62" y="81.28"/>
+<junction x="-7.62" y="78.74"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -22196,6 +22220,31 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="U$11" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="-93.98" y1="116.84" x2="-93.98" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="121.92" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="-86.36" y1="121.92" x2="-78.74" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="121.92" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="121.92" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="121.92" x2="-55.88" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="121.92" x2="-55.88" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="116.84" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="-71.12" y1="116.84" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="-78.74" y1="116.84" x2="-78.74" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="-86.36" y1="116.84" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-71.12" y="121.92"/>
+<junction x="-86.36" y="121.92"/>
+<junction x="-78.74" y="121.92"/>
+<junction x="-63.5" y="121.92"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="-63.5" y1="121.92" x2="-63.5" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -22205,6 +22254,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="68.58" y1="177.8" x2="73.66" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="63.5" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
+<junction x="68.58" y="177.8"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -22213,6 +22263,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-35.56" y1="170.18" x2="-27.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="167.64" x2="-35.56" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="[LIDAR]" gate="A" pin="4"/>
+<junction x="-35.56" y="170.18"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
@@ -22221,6 +22272,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="48.26" y1="208.28" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="205.74" x2="48.26" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="SCHOTTKY1" gate="G$1" pin="C"/>
+<junction x="48.26" y="208.28"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
@@ -22244,6 +22296,8 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="C20" gate="G$1" pin="+"/>
 <wire x1="114.3" y1="177.8" x2="119.38" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="172.72" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
+<junction x="114.3" y="177.8"/>
+<junction x="104.14" y="177.8"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -22257,6 +22311,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="25.4" y1="10.16" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
+<junction x="25.4" y="10.16"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VDD@1"/>
@@ -22296,6 +22351,16 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="-63.5" y1="106.68" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="101.6" x2="-63.5" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-81.28" y="101.6"/>
+<junction x="-78.74" y="106.68"/>
+<junction x="-63.5" y="106.68"/>
+<junction x="-71.12" y="106.68"/>
+<junction x="-78.74" y="101.6"/>
+<junction x="-76.2" y="101.6"/>
+<junction x="-73.66" y="101.6"/>
+<junction x="-71.12" y="101.6"/>
+<junction x="-86.36" y="106.68"/>
+<junction x="-63.5" y="101.6"/>
 </segment>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
@@ -22313,6 +22378,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-38.1" y1="66.04" x2="-22.86" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <wire x1="-22.86" y1="66.04" x2="-5.08" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-22.86" y="66.04"/>
 </segment>
 <segment>
 <wire x1="-33.02" y1="203.2" x2="-66.04" y2="203.2" width="0.1524" layer="91"/>
@@ -22338,6 +22404,8 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-157.48" y1="5.08" x2="-157.48" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="-157.48" y1="12.7" x2="-142.24" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-157.48" y="2.54"/>
+<junction x="-157.48" y="5.08"/>
 </segment>
 <segment>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
@@ -22413,7 +22481,7 @@ email: shengwen1997.tw@gmail.com</text>
 <net name="DCMI_D4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PE4"/>
-<wire x1="-38.1" y1="-30.48" x2="-27.94" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-30.48" x2="-25.4" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-35.56" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22448,14 +22516,14 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="DCMI_D3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PE0"/>
-<wire x1="-38.1" y1="-20.32" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-35.56" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="50.8" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <label x="50.8" y="43.18" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="D3"/>
+</segment>
+<segment>
+<wire x1="-38.1" y1="-22.86" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PE1"/>
+<label x="-35.56" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCMI_D5" class="0">
@@ -22511,6 +22579,11 @@ email: shengwen1997.tw@gmail.com</text>
 <pinref part="U$1" gate="G$1" pin="PA6"/>
 <wire x1="-104.14" y1="66.04" x2="-121.92" y2="66.04" width="0.1524" layer="91"/>
 <label x="-121.92" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="63.5" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="PIXCLK"/>
 </segment>
 </net>
 <net name="DCMI_HSYNC" class="0">
@@ -22651,6 +22724,8 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-154.94" y1="53.34" x2="-144.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="-154.94" y="53.34" size="1.778" layer="95"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<junction x="-144.78" y="53.34"/>
 </segment>
 </net>
 <net name="UART2_TX" class="0">
@@ -22662,6 +22737,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-38.1" y1="208.28" x2="-53.34" y2="208.28" width="0.1524" layer="91"/>
 <label x="-50.8" y="208.28" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="UART2_RX" class="0">
@@ -22673,6 +22749,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-38.1" y1="205.74" x2="-53.34" y2="205.74" width="0.1524" layer="91"/>
 <label x="-50.8" y="205.74" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="UART3_TX" class="0">
@@ -22696,6 +22773,7 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="-104.14" y1="205.74" x2="-88.9" y2="205.74" width="0.1524" layer="91"/>
 <label x="-101.6" y="205.74" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SPI2_SCK" class="0">
@@ -22784,38 +22862,14 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="AT24C08C_A2" class="0">
 <segment>
-<wire x1="83.82" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <label x="68.58" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-17.78" y1="-10.16" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-35.56" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-93.98" y1="116.84" x2="-93.98" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="121.92" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="121.92" x2="-78.74" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="121.92" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="121.92" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="121.92" x2="-55.88" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="121.92" x2="-55.88" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="-63.5" y1="116.84" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="-71.12" y1="116.84" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="-78.74" y1="116.84" x2="-78.74" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="116.84" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="121.92" x2="-63.5" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="-63.5" y1="127" x2="-63.5" y2="129.54" width="0.1524" layer="91"/>
-<junction x="-63.5" y="127"/>
+<pinref part="U$1" gate="G$1" pin="PD15"/>
 </segment>
 </net>
 <net name="MPU9250_SPI1_CS" class="0">
@@ -22867,6 +22921,14 @@ email: shengwen1997.tw@gmail.com</text>
 <segment>
 <wire x1="5.08" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
 <label x="5.08" y="119.38" size="1.778" layer="95"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="P1"/>
+<wire x1="17.78" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="P"/>
+<wire x1="35.56" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<junction x="17.78" y="119.38"/>
+<junction x="35.56" y="119.38"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -22949,6 +23011,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-22.86" y1="86.36" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="86.36" x2="-20.32" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-22.86" y="86.36"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -22961,16 +23024,7 @@ email: shengwen1997.tw@gmail.com</text>
 <wire x1="-22.86" y1="73.66" x2="-22.86" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="P1"/>
-<wire x1="17.78" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="P"/>
-<wire x1="35.56" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-22.86" y="73.66"/>
 </segment>
 </net>
 <net name="N$19" class="0">
