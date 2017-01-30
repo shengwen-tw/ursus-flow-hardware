@@ -21669,10 +21669,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pad name="P$4" x="4.953" y="0" drill="0.6" diameter="1.4224"/>
 <pad name="P$5" x="6.604" y="0" drill="0.6" diameter="1.4224"/>
 <pad name="P$6" x="8.255" y="0" drill="0.6" diameter="1.4224"/>
-<wire x1="-0.762" y1="-1.27" x2="-0.762" y2="8.89" width="0.127" layer="1"/>
-<wire x1="-0.762" y1="8.89" x2="9.144" y2="8.89" width="0.127" layer="1"/>
-<wire x1="9.144" y1="8.89" x2="9.144" y2="-1.27" width="0.127" layer="1"/>
-<wire x1="9.144" y1="-1.27" x2="-0.762" y2="-1.27" width="0.127" layer="1"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.762" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="8.89" x2="9.144" y2="8.89" width="0.127" layer="21"/>
+<wire x1="9.144" y1="8.89" x2="9.144" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="9.144" y1="-1.27" x2="-0.762" y2="-1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -21824,9 +21824,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$8" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$9" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
 <part name="U$10" library="M3_HOLE" deviceset="M3_HOLE" device=""/>
-<part name="U$11" library="MPU9250_BREAKOUT" deviceset="MPU9250_BREAKOUT" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="U$11" library="MPU9250_BREAKOUT" deviceset="MPU9250_BREAKOUT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21841,7 +21841,6 @@ email: shengwen1997.tw@gmail.com</text>
 <text x="-127" y="213.36" size="1.778" layer="98">UART3</text>
 <text x="-76.2" y="213.36" size="1.778" layer="98">UART2</text>
 <text x="-76.2" y="175.26" size="1.778" layer="98">Lidar</text>
-<text x="121.92" y="17.78" size="1.778" layer="98">MPU9250(Breakboard Module)</text>
 <text x="68.58" y="71.12" size="1.778" layer="98">MT9V034(Breakboard Module)</text>
 <text x="10.16" y="213.36" size="1.778" layer="98">Power from UBEC (5V)</text>
 </plain>
@@ -21970,9 +21969,9 @@ email: shengwen1997.tw@gmail.com</text>
 <instance part="U$8" gate="G$1" x="17.78" y="-58.42"/>
 <instance part="U$9" gate="G$1" x="30.48" y="-58.42"/>
 <instance part="U$10" gate="G$1" x="43.18" y="-58.42"/>
-<instance part="U$11" gate="G$1" x="129.54" y="10.16" rot="R180"/>
 <instance part="+3V9" gate="G$1" x="175.26" y="0" rot="R270"/>
 <instance part="GND8" gate="1" x="180.34" y="2.54" rot="R90"/>
+<instance part="U$11" gate="G$1" x="129.54" y="10.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -22826,43 +22825,43 @@ email: shengwen1997.tw@gmail.com</text>
 </net>
 <net name="LED_B" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PD12"/>
-<wire x1="-38.1" y1="-2.54" x2="-27.94" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-35.56" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="116.84" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
 <label x="116.84" y="119.38" size="1.778" layer="95"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 </segment>
+<segment>
+<wire x1="-38.1" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
+<label x="-35.56" y="12.7" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD6"/>
+</segment>
 </net>
 <net name="LED_G" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PD13"/>
-<wire x1="-38.1" y1="-5.08" x2="-27.94" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-35.56" y="-5.08" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="116.84" y1="109.22" x2="127" y2="109.22" width="0.1524" layer="91"/>
 <label x="116.84" y="109.22" size="1.778" layer="95"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 </segment>
+<segment>
+<wire x1="-38.1" y1="15.24" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="-35.56" y="15.24" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD5"/>
+</segment>
 </net>
 <net name="LED_R" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PD14"/>
-<wire x1="-38.1" y1="-7.62" x2="-27.94" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-35.56" y="-7.62" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="116.84" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <label x="116.84" y="99.06" size="1.778" layer="95"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
+<segment>
+<wire x1="-38.1" y1="17.78" x2="-27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="-35.56" y="17.78" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD4"/>
+</segment>
 </net>
 <net name="AT24C08C_A2" class="0">
 <segment>
-<wire x1="86.36" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <label x="68.58" y="2.54" size="1.778" layer="95"/>
 </segment>
