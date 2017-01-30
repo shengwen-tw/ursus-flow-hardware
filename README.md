@@ -1,6 +1,6 @@
 #Ursus-flow
 
-This is the hardware design of Ursus-flow, an computer vision board provide speed estimation for multi-rotor.
+This is the hardware design of Ursus-flow, a computer vision board provide speed estimation for multi-rotor.
 
 <img src="https://github.com/shengwen1997/ursus-flow-hardware/blob/master/materials/ursusflow.png?raw=true" width="610" height="350">
 
