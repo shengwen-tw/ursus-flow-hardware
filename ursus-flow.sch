@@ -21663,12 +21663,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <library name="MPU9250_BREAKOUT">
 <packages>
 <package name="MPU9250_BREAKOUT">
-<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.4224"/>
-<pad name="P$2" x="1.651" y="0" drill="0.6" diameter="1.4224"/>
-<pad name="P$3" x="3.302" y="0" drill="0.6" diameter="1.4224"/>
-<pad name="P$4" x="4.953" y="0" drill="0.6" diameter="1.4224"/>
-<pad name="P$5" x="6.604" y="0" drill="0.6" diameter="1.4224"/>
-<pad name="P$6" x="8.255" y="0" drill="0.6" diameter="1.4224"/>
+<pad name="P$1" x="0" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$2" x="1.651" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$3" x="3.302" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$4" x="4.953" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$5" x="6.604" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$6" x="8.255" y="0" drill="0.8" diameter="1.4224"/>
 <wire x1="-0.762" y1="-1.27" x2="-0.762" y2="8.89" width="0.127" layer="21"/>
 <wire x1="-0.762" y1="8.89" x2="9.144" y2="8.89" width="0.127" layer="21"/>
 <wire x1="9.144" y1="8.89" x2="9.144" y2="-1.27" width="0.127" layer="21"/>
