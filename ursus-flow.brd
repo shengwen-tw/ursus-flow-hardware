@@ -8,17 +8,17 @@
 </settings>
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="39" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="39" fill="1" visible="no" active="yes"/>
@@ -117,6 +117,12 @@
 <wire x1="88.9" y1="80.01" x2="91.44" y2="77.47" width="0" layer="20" curve="-90"/>
 <wire x1="1.27" y1="77.47" x2="3.81" y2="80.01" width="0" layer="20" curve="-90"/>
 <text x="19.7358" y="41.6814" size="1.27" layer="26" rot="MR270">MPU9250</text>
+<wire x1="78.232" y1="66.5734" x2="78.232" y2="72.9234" width="0.4064" layer="26"/>
+<wire x1="77.216" y1="65.5574" x2="70.866" y2="65.5574" width="0.4064" layer="26"/>
+<circle x="78.232" y="65.5574" radius="0.209453125" width="0.4064" layer="26"/>
+<text x="80.3656" y="63.881" size="1.778" layer="26" rot="MR0">z</text>
+<text x="78.2574" y="74.422" size="1.778" layer="26" rot="MR0" align="center">x</text>
+<text x="69.6468" y="65.8876" size="1.778" layer="26" rot="MR0" align="center">y</text>
 </plain>
 <libraries>
 <library name="burr-brown">
@@ -3553,7 +3559,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="41.656" y="38.989" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R13" library="resistor" package="R0805W" value="4.7k" x="88.646" y="57.404" smashed="yes" rot="MR90">
-<attribute name="NAME" x="86.106" y="55.499" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="89.8652" y="55.7276" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="89.916" y="55.499" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="R14" library="resistor" package="R0805W" value="4.7k" x="38.354" y="38.354" smashed="yes" rot="R270">
@@ -3561,7 +3567,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="39.624" y="38.989" size="1.27" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R15" library="resistor" package="R0805W" value="4.7k" x="80.264" y="58.42" smashed="yes" rot="MR180">
-<attribute name="NAME" x="78.74" y="57.1246" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="78.7654" y="60.8838" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="78.359" y="60.96" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R16" library="resistor" package="R0805W" value="4.7k" x="68.834" y="46.228" smashed="yes" rot="MR180">
@@ -3643,7 +3649,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="40.767" y="59.6138" size="1.27" layer="25" rot="R180" align="center"/>
 <attribute name="VALUE" x="34.544" y="59.182" size="1.27" layer="27"/>
 </element>
-<element name="U$6" library="LIDAR_MOUNT" package="LIDAR_MOUNT" value="LIDAR_MOUNT" x="29.21" y="30.48" rot="R180"/>
+<element name="U$6" library="LIDAR_MOUNT" package="LIDAR_MOUNT" value="LIDAR_MOUNT" x="29.21" y="30.48" smashed="yes" rot="R180"/>
 <element name="U$7" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="5.08" y="33.02"/>
 <element name="U$8" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="87.63" y="33.02"/>
 <element name="U$9" library="M3_HOLE" package="M3_HOLE" value="M3_HOLE" x="5.08" y="76.2"/>
