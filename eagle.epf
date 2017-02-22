@@ -363,10 +363,10 @@ UsedLibrary="MT9V034_MODULE.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="766 48 1365 447"
-State=1
+Loc="383 171 982 570"
+State=2
 Number=0
 
 [Desktop]
-Screen="2966 900"
+Screen="3286 1080"
 Window="Win_1"
