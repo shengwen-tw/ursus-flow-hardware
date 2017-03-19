@@ -21699,9 +21699,9 @@ Micro-USB AB Receptacle, Bottom Mount, SMT, Lead-Free&lt;/a&gt; (&lt;a href="htt
 <part name="LED2" library="led" deviceset="LED" device="SML0805" value="G"/>
 <part name="LED3" library="led" deviceset="LED" device="SML0805" value="B"/>
 <part name="PWR_LED" library="led" deviceset="LED" device="SML0805" value="PWR_LED"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0805W" value="1K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0805W" value="1K"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0805W" value="10K"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0805W" value="220"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -21779,7 +21779,7 @@ Micro-USB AB Receptacle, Bottom Mount, SMT, Lead-Free&lt;/a&gt; (&lt;a href="htt
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="0.1uf"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="R18" library="resistor" deviceset="R-EU_" device="R0805W" value="1k"/>
-<part name="C20" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="100uf/10V"/>
+<part name="C20" library="rcl" deviceset="CPOL-US" device="B/3528-21W" value="68uf/10V"/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="[LIDAR]" library="jst-ph" deviceset="JST-PH4" device="" value="lidar_connector"/>
 <part name="[SPI2]" library="jst-ph" deviceset="JST-PH6" device="" value="spi2_connector"/>
