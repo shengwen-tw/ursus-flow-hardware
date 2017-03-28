@@ -21764,9 +21764,9 @@ Micro-USB AB Receptacle, Bottom Mount, SMT, Lead-Free&lt;/a&gt; (&lt;a href="htt
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="R0805W" value="no need"/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
-<part name="R15" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0805W" value="1k"/>
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805W" value="4.7k"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
